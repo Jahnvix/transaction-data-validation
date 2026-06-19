@@ -1,3 +1,4 @@
+
 # Transaction Validator Platform
 
 A production-ready web platform for validating transaction CSV files, generating cleaned and error outputs, and splitting valid records into downloadable chunks.
@@ -9,7 +10,7 @@ A production-ready web platform for validating transaction CSV files, generating
 
 ## Project Structure
 
-```text
+
 transaction-validator-platform/
 ├── backend/
 │   ├── .env.example
@@ -138,3 +139,6 @@ py -3.14 -m uvicorn app.main:app --app-dir backend --reload --host 0.0.0.0 --por
 3. Set the start command to `uvicorn app.main:app --host 0.0.0.0 --port $PORT`.
 4. Add `BACKEND_CORS_ORIGINS` with your Vercel frontend URL.
 5. Deploy the service and use its public URL in the frontend environment variables.
+=======
+# transaction-data-validation
+ 365b6777ed8c7b5f2fb7a421e9d6660a1b5b9700
