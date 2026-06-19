@@ -1,0 +1,11 @@
+order_id,order_date,customer_id,customer_name,country,phone_number,product_id,product_name,quantity,unit_price,payment_mode,payment_status
+ORD-001,2025-04-01 10:30:00,CUST-101,Ananya Sharma,India,9876543210,PROD-01,Wireless Earbuds,2,1499.00,upi,paid
+ORD-002,15-03-2025,CUST-102,Rahul Mehta,India,8765432109,PROD-02,Smart Watch,1,3999.00,card,paid
+ORD-003,03/15/2025,CUST-103,Li Wei,Singapore,91234567,PROD-03,Phone Case,3,19.90,wallet,paid
+ORD-004,2025-04-02,CUST-104,John Smith,United States,4155550199,PROD-04,Laptop Sleeve,1,29.99,bank_transfer,pending
+ORD-005,2025-04-03,CUST-105,Priya Nair,India,7654321098,PROD-05,USB-C Hub,1,899.00,cash,paid
+ORD-006,2025-04-04,CUST-106,Arjun Patel,India,12345,PROD-06,Keyboard,1,2499.00,upi,failed
+ORD-007,2025-04-05,CUST-107,Meera Iyer,India,6543210987,PROD-07,Monitor Stand,0,1299.00,card,paid
+ORD-008,2025-04-06,CUST-108,Sara Tan,Singapore,8123456,PROD-08,Desk Lamp,2,45.00,paypal,pending
+ORD-009,2025-04-07,CUST-109,Vikram Singh,India,5432109876,PROD-09,Webcam,1,-50.00,upi,refunded
+ORD-010,2025-04-08,CUST-110,Emily Clark,United States,2125550188,PROD-10,Mouse Pad,5,12.50,card,paid

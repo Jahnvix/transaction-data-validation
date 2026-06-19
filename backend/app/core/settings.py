@@ -26,7 +26,9 @@ def _parse_csv_env(value: str) -> list[str]:
 def get_settings() -> AppSettings:
     app_name = os.getenv("APP_NAME", "Transaction Validator API")
     app_env = os.getenv("APP_ENV", "development")
-    cors_origins = _parse_csv_env(os.getenv("BACKEND_CORS_ORIGINS", "http://localhost:3000"))
+    cors_origins = _parse_csv_env(
+        os.getenv("BACKEND_CORS_ORIGINS", "http://localhost:3000,http://localhost:3005")
+    )
     storage_setting = os.getenv("STORAGE_DIR", "storage/jobs")
     storage_dir = Path(storage_setting)
 

@@ -79,7 +79,7 @@ LEFT JOIN orders o
 WHERE o.customer_id IS NULL;
 ```
 
-Result summary: query provided; actual result depends on the contents of the `orders` table, which was not included in the shared data.
+Result summary: `298` rows (with the sample `orders` table from `sql/00_setup_customers.sql`, which inserts 2 sample orders).
 
 ## Part 2: Data Transformation and Enrichment
 

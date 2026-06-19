@@ -1,0 +1,1 @@
+I built a config-driven FastAPI + Next.js platform: validation rules live in JSON, the backend validates phone/date/numeric fields and splits valid rows into chunks, and the frontend is a single upload workspace. I chose not to add auth, persistent job history, or async queue processing to keep the MVP focused on the assignment workflow and fast local testing.
