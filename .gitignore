@@ -1,0 +1,9 @@
+frontend/node_modules
+frontend/.next
+frontend/out
+backend/**/__pycache__
+backend/.pytest_cache
+backend/.venv
+backend/storage/jobs/*
+!backend/storage/jobs/.gitkeep
+.DS_Store

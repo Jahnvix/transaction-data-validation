@@ -1,0 +1,117 @@
+{
+  "required_columns": [
+    "order_id",
+    "order_date",
+    "customer_id",
+    "customer_name",
+    "country",
+    "phone_number",
+    "product_id",
+    "product_name",
+    "quantity",
+    "unit_price",
+    "payment_mode",
+    "payment_status"
+  ],
+  "country_column": "country",
+  "phone_column": "phone_number",
+  "date_formats": [
+    "%Y-%m-%d",
+    "%d-%m-%Y",
+    "%m/%d/%Y"
+  ],
+  "datetime_formats": [
+    "%Y-%m-%d %H:%M:%S",
+    "%d-%m-%Y %H:%M:%S",
+    "%m/%d/%Y %H:%M:%S",
+    "%Y-%m-%dT%H:%M:%S"
+  ],
+  "phone_rules": {
+    "india": {
+      "digits": 10,
+      "pattern": "^\\d{10}$"
+    },
+    "singapore": {
+      "digits": 8,
+      "pattern": "^\\d{8}$"
+    },
+    "united states": {
+      "digits": 10,
+      "pattern": "^\\d{10}$"
+    }
+  },
+  "field_rules": {
+    "order_id": {
+      "required": true,
+      "type": "string"
+    },
+    "order_date": {
+      "required": true,
+      "type": "datetime",
+      "formats": [
+        "%Y-%m-%d",
+        "%d-%m-%Y",
+        "%m/%d/%Y",
+        "%Y-%m-%d %H:%M:%S",
+        "%d-%m-%Y %H:%M:%S",
+        "%m/%d/%Y %H:%M:%S",
+        "%Y-%m-%dT%H:%M:%S"
+      ]
+    },
+    "customer_id": {
+      "required": true,
+      "type": "string"
+    },
+    "customer_name": {
+      "required": true,
+      "type": "string"
+    },
+    "country": {
+      "required": true,
+      "type": "string"
+    },
+    "phone_number": {
+      "required": true,
+      "type": "phone"
+    },
+    "product_id": {
+      "required": true,
+      "type": "string"
+    },
+    "product_name": {
+      "required": true,
+      "type": "string"
+    },
+    "quantity": {
+      "required": true,
+      "type": "integer",
+      "min_value": 1
+    },
+    "unit_price": {
+      "required": true,
+      "type": "float",
+      "min_value": 0
+    },
+    "payment_mode": {
+      "required": true,
+      "type": "string",
+      "allowed_values": [
+        "card",
+        "upi",
+        "cash",
+        "bank_transfer",
+        "wallet"
+      ]
+    },
+    "payment_status": {
+      "required": true,
+      "type": "string",
+      "allowed_values": [
+        "paid",
+        "pending",
+        "failed",
+        "refunded"
+      ]
+    }
+  }
+}

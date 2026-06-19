@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(15, 118, 110, 0.18), transparent 30%),
+    radial-gradient(circle at 85% 10%, rgba(6, 95, 70, 0.12), transparent 22%),
+    linear-gradient(180deg, #f7fbfe 0%, #edf4f5 48%, #f9faf8 100%);
+  color: #08111f;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.page-shell {
+  position: relative;
+}
+
+.page-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(8, 17, 31, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 17, 31, 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.28), transparent 92%);
+  pointer-events: none;
+}
+
+.display-serif {
+  font-family: var(--font-fraunces), serif;
+}
+
+.panel-surface {
+  border: 1px solid rgba(100, 116, 139, 0.18);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.8));
+  box-shadow:
+    0 32px 80px rgba(8, 17, 31, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(18px);
+}
+
+.soft-outline {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(248, 250, 252, 0.76);
+}
+
+.glass-panel {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 24px 60px rgba(8, 17, 31, 0.08);
+  backdrop-filter: blur(20px);
+}
+
+.metric-card {
+  border: 1px solid rgba(203, 213, 225, 0.72);
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.94), rgba(255, 255, 255, 0.84));
+}
+
+.pill-accent {
+  border: 1px solid rgba(13, 148, 136, 0.24);
+  background: rgba(240, 253, 250, 0.92);
+  color: #0f766e;
+}
+
+.hero-stripe {
+  background:
+    linear-gradient(135deg, rgba(8, 17, 31, 0.96), rgba(15, 118, 110, 0.88)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+}
+
+.hero-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(14px);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.download-card {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(244, 247, 250, 0.88));
+}
+
+.progress-track {
+  height: 0.625rem;
+  overflow: hidden;
+  border-radius: 9999px;
+  background: rgba(226, 232, 240, 0.9);
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 9999px;
+}
